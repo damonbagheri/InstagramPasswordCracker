@@ -21,10 +21,10 @@ def logInSuccess(Browser):
     return not(Browser.is_text_present(user_err_msg) or Browser.is_text_present(pass_err_msg))
 
 #<<<<<<< Updated upstream
-("account_username =sys.argv[1]")
+('account_username =sys.argv[1]')
 #with Browser ('firefox', headless=True) with Browser('chrome', headless=True)
-'browser'.visit ('https://www.instagram.com')
-'browse'.find_by_text('Log in').first.click()
+'browser'.visit('https://www.instagram.com')
+#'browse'.find_by_text('Log in').first.click()
 username_form = 'browse'.find_by_name('username').first
 password_form = 'browse'.find_by_name('password').first
 login_button = 'browse'.find_by_text('Log in').first
@@ -66,4 +66,6 @@ else:
 #else:
         print("Password for username:  + account_username  =  + password")
 #>>>>>>> Stashed changes
+
+
 
